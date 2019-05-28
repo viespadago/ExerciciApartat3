@@ -1,0 +1,283 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+	<title>
+	Tienda de Cómics
+	</title>
+	<style type="text/css">
+			
+			* {
+				margin:0px;
+				padding:0px;
+				background-color: lightyellow;
+			}
+			
+			#header {
+				width:100%; height:auto; margin:0 auto;
+				font-family:Arial, Helvetica, sans-serif;
+				display:inline;
+			}
+ 
+			#menu {
+				left:120px;
+				width:100%; height:47px; 
+				background-color:#000;
+			}
+							
+			#menu_2 {
+				position:absolute;
+				right:120px;
+				top:0px;
+				width:90px;
+				height:44px;
+				z-index:5;
+			}
+			
+			#menu_3 {
+				position:absolute;
+				left:140px;
+				top:240px;
+				width:90px;
+				height:24px;
+				z-index:5;
+				text-decoration: underline red; 
+			}
+			
+			#menu_4 {
+				position:absolute;
+				left:140px;
+				top:490px;
+				width:90px;
+				height:24px;
+				z-index:5;
+				text-decoration: underline red; 
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:120px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			
+			.cf:before,.cf:after{
+  				content: '';  
+  				display: table;
+			}
+.cf:after{
+  clear:both;    
+}
+h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  color:#444;
+  background-color: #f1f1f1;
+  padding: 10px;
+  font-size: 14px;
+}
+.container{
+  position: relative;
+  margin: 50px auto;
+  max-width: 80%;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border:1px solid #c5c5c5;
+}
+
+.gallery{
+  width: 100%;
+  overflow: hidden;
+}
+
+.image{
+  /* float:left not working in mozilla*/
+  display: inline-block;
+  padding: 2%;
+  background-color: #fff;
+  margin: 1%;
+  width: 18%;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+  text-align: center;  
+  border:1px solid #c3c3c3;
+  cursor: pointer;
+}
+
+.image figure{
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.image figure img{
+  width: 100%;
+}
+
+figcaption{
+  background-color: rgba(0,0,0,0.8);
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: slategrey;
+  max-width:100%;
+  font-weight: bold;
+}
+
+figcaption:hover{
+  color: #fff;
+}
+		</style>
+</head>
+<body>
+	<img src="logo.png" alt="Tienda de Cómics" width="320" height="130">
+<div id="header">
+	<div id="menu_2">
+		<ul class="nav">
+				<li><a href="">Usuario</a>
+			<ul>	
+					<li><a href="">Entrar cuenta</a></li>	
+					<li><a href="">Registrarse</a></li> 
+			</ul>	
+				</li>
+		</ul>
+	</div>
+</div>
+	<img src="shopping.png" align="right" alt="Carrito" width="80" height="80">
+<div id="header">
+	<div id="menu">
+			<ul class="nav">
+				<li><a href="">Título</a>
+					<ul>
+						<li><a href="">Título</a></li>
+						<li><a href="">Autor</a></li>
+						<li><a href="">Nacionalidad</a></li>
+						<li><a href="">Género</a></li>
+						<li><a href="">Compañía</a>
+							<ul>
+								<li><a href="">Marvel</a></li>
+								<li><a href="">DC</a></li>
+								<li><a href="">...</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href=""><input id="buscar"></a></li>
+				<li><a href="">Buscar</a></li>
+			</ul>
+	</div>
+</div>
+<div id="header">
+	<div id="menu_3">
+		<li><b>Novedades</b></li>
+	</div>	
+</div>
+<div id="header">
+	<div id="menu_4">
+		<li><b>Populares</b></li>
+	</div>	
+</div>	
+<div class="container">
+	<div class="gallery cf">
+		<div class="image">
+			<figure>
+				<img src="comics/dolmen-288.jpg" alt="" />
+			</figure>
+      <figcaption>
+      	Dolmen nº288
+      </figcaption>  
+		</div>
+    <div class="image">
+			<figure>
+				<img src="comics/head_lopper.jpg" alt="" />
+			</figure>
+      <figcaption>
+      	Head Lopper
+      </figcaption>
+		</div>
+    <div class="image">
+			<figure>
+				<img src="comics/historias_corrientes_8.jpg" alt="" />
+			</figure>
+      <figcaption>
+      	Historias Corrientes nº8
+      </figcaption>
+		</div>
+    <div class="image">
+			<figure>
+				<img src="comics/operacion_overlord_5.jpg" alt="" />
+			</figure>
+      <figcaption>
+      Operación Overlord nº5
+      </figcaption>
+		</div>
+    <div class="image">
+			<figure>
+				<img src="comics/sara_lone_4.jpg" alt="" />
+			</figure>
+      <figcaption>
+      	Sara Lone nº4
+      </figcaption>
+		</div>
+    <div class="image">
+			<figure>
+				<img src="comics/final_fantasy_stranger.jpg" alt="" />
+			</figure>
+      <figcaption>
+      	Final Fantasy Stranger
+      </figcaption>
+		</div>
+    <div class="image">
+			<figure>
+				<img src="comics/el-increible-hulk-02.jpg" alt="" />
+			</figure>
+      <figcaption>
+      	Hulk nº2
+      </figcaption>
+		</div>
+    <div class="image">
+			<figure>
+				<img src="comics/thanos-la-primera-nueva-trilogia.jpg" alt="" />
+			</figure>
+      <figcaption>
+      	Thanos Nueva Trilogía 
+      </figcaption>
+		</div>
+	</div>
+</div>	
+</body>
+</html>
